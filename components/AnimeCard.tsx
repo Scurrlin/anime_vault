@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+import { MotionDiv } from "./Motion";
+
+const stagger = 0.25;
+
+const variants = {
+  hidden: { opactiy: 0 },
+  visible: { opacity: 1}
+}
+
 export interface AnimeProp {
   id: string;
   name: string;
@@ -17,7 +26,7 @@ interface Prop {
   index: number;
 }
 
-function AnimeCard({ anime }: Prop) {
+function AnimeCard({ anime, index }: Prop) {
   return (
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
