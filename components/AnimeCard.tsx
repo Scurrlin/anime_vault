@@ -55,7 +55,7 @@ function AnimeCard({ anime, index }: Prop) {
           </h2>
           <div className="py-1 px-2 bg-[#161921] rounded-sm">
             <p className="text-white text-sm font-bold capitalize">
-              {anime.kind}
+              {anime.kind === "tv" ? "TV" : anime.kind}
             </p>
           </div>
         </div>
