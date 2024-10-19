@@ -3,7 +3,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer className="sticky bottom-0 w-full sm:px-16 py-4 px-8 flex justify-between items-center gap-2 flex-wrap bg-[#161921]">
-      <p className="text-base font-bold text-white">Copyright @ 2024 Anime Vault</p>
+      <p className="text-base font-bold text-white">Anime Vault © 2024</p>
 
       <a href="#top">
         <Image
